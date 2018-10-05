@@ -7,7 +7,7 @@ Git Master: Richard Dorleans
 
 MVP Project Proposal:
 
-"Local Loc Smiths" is a web application that provides potential clients with information on local hairstylists specializing in hairbraiding and hair locs in their chosen area. Users will have the choice of creating a client or a stylist account. Once the account is created, the potential clients can input a location, and an interactive map will display available salons/shops.  For the stylist account, the application will provide the stylists with a platform to connect with and maintain their clientele.
+"Local Loc Smiths" is a web application that provides potential clients with information on local hairstylists specializing in hairbraiding and hair locs in their chosen area. Users will have the choice of creating a client or a stylist account.  Once the account is created, the potential clients can input a location, and an interactive map will display available salons/shops.  For the stylist account, the application will provide the stylists with a platform to connect with and maintain their clientele.
 
 When users hover over a location, a custom popup will display basic location information and rating. Once user clicks on a location,they will be directed to a page with more detailed information such as hours of operation, customer rating, address, pricing and contact information.
 
