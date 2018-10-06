@@ -1,0 +1,23 @@
+{
+  "name": "project-3-local-loc-smiths",
+  "version": "1.0.0",
+  "description": "Project Manager: Richard Dorleans",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichD3478/Project-3-Local-Loc-Smiths.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichD3478/Project-3-Local-Loc-Smiths/issues"
+  },
+  "homepage": "https://github.com/RichD3478/Project-3-Local-Loc-Smiths#readme"
+}

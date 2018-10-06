@@ -1,19 +1,9 @@
-DROP DATABASE IF EXISTS locsSmithdb;
-CREATE DATABASE locsSmithdb;
-USE locsSmithdb;
+DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE exampledb;
 
-CREATE TABLE categories
-(
-    username varchar(55) NOT NULL,
-    password varchar(99) NOT NULL,
-    lastname varchar(55) NOT NULL,
-    firstname varchar(55) NOT NULL,
-    addr varchar(55) NOT NULL,
-    phone INT(11),
-    email varchar(99),
-    longitude varchar(20),
-    latitude varchar(20),
-    clientrating INT(1),
-    braiding BOOLEAN,
-    hairlocs BOOLEAN
-);
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;
+
+DROP DATABASE IF EXISTS potties_db;
+CREATE DATABASE potties_db;
+

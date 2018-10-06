@@ -30,7 +30,7 @@ module.exports = function (app) {
             ]
         }).then(function (locsSmithdb) {
             res.json(locsSmithdb);
-            console.log(cleanAvg);
+            console.log(ratingAvg);
         });
     });
 
