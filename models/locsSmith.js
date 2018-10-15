@@ -1,65 +1,19 @@
-module.exports = function(sequelize, DataTypes) {
-    let LocsSmith = sequelize.define("LocsSmith", {
-      username: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: "none"
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: "none"
-      },
-      lastname: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: "none"
-      },
-      firstname: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: "none"
-      },
-      addr: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: "none"
-      },
-      phone: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
-        defaultValue: "none"
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: true,
-        defaultValue: "none"
-      },
-      longitude: {
-        type: DataTypes.STRING,
-        allowNull: true,
-        defaultValue: "none"
-      },
-      latitude: {
-        type: DataTypes.STRING,
-        allowNull: true,
-        defaultValue: "none"
-      },
-      clientRating: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
-        defaultValue: "1"
-      },
-      braiding: { 
-        type: DataTypes.BOOLEAN, 
-        allowNull: true, 
-        defaultValue: false
-      },
-      hairlocs: { 
-        type: DataTypes.BOOLEAN, 
-        allowNull: true, 
-        defaultValue: false
-      }
-    });
-    return LocsSmith;
-  };
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const locsSmithSchema = new Schema({
+    username: { type: String, required: true },
+    password: { type: String, required: true },
+    lastname: { type: String, required: true },
+    firstname: { type: String, required: true },
+    addr: { type: String, required: true },
+    phone: { type: Number, required: false },
+    email: { type: String, required: false },
+    clientrating: { type: Number, required: false },
+    braiding: { type: Boolean, required: true },
+    hairlocs: { type: Boolean, required: true }
+});
+
+const LocsSmith = mongoose.model("LocsSmith", locsSmithSchema);
+
+module.exports = LocsSmith;
