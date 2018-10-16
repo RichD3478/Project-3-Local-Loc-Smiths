@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const locsSmithController = require("../../controllers/locsSmithController");
+const locsSmithController = require("../../client/controllers/locsSmithController");
 
 router.route("/")
   .get(locsSmithController.findAll)
