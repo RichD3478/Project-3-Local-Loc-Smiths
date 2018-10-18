@@ -6,7 +6,7 @@ import NoMatch from "./pages/NoMatch";
 const App = () => (
   <Router>
     <div>
-      <Nav />
+      
       <Switch>
         <Route exact path="/" component={LocsSmiths} />
         <Route exact path="/locsSmiths" component={LocsSmiths} />
